@@ -1,0 +1,11 @@
+Array Size || Insert || Append ||
+-----------||--------||--------||
+tinyArray  || 32.3ns || 90 ns  ||
+smallArray || 44.9ns || 80ns   ||
+mediumArray|| 183.7ns|| 132.5ns||
+largeArray || 8.782ms|| 688.6ns||
+XLarray    || 852.3ms|| 3.654ms||
+
+Append is faster, because .push() just slaps it at 
+the last index, whereas .unshift() has to reassign the 
+indices to their values, which takes "90 years".
