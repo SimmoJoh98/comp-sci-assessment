@@ -1,3 +1,5 @@
+const perf = require('execution-time')();
+
 const sumZero = (arr) =>{
     for(i=0; i<arr.length; i++){
         for(J=0; J<arr.length; J++){
