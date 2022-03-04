@@ -5,7 +5,8 @@ const sumZero = (arr) =>{
                 return true
             }
         }
-    } return false
+    }
+    return false
 }
 
 // runtime: O(n^2)
