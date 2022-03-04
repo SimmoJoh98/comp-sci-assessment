@@ -59,3 +59,26 @@ const longestWord = (arr) => {
 
 // runtime: O(n)
 // space O(n)
+
+//problem 1
+perf.start();
+sumZero([2,2,2,-2]); //[2,2,2] for false
+let sumZeroTime = perf.stop();
+//problem 2
+perf.start();         
+uniqueChars('abbd'); //abcd for true
+let uniqueCharsTime = perf.stop();
+//problem 3 
+perf.start();
+isPangram('the quick brown fox jumped over the lazy dog');
+let isPangramTime = perf.stop();
+//problem 4
+perf.start();
+longestWord(['greetings', 'you', 'gremlin', 'thisisdefinitelythelongestword']);
+let longestWordTime = perf.stop();
+
+console.log(`Results:`)
+console.log(`sumZero:`, sumZeroTime.preciseWords)
+console.log(`uniqueChars:`, uniqueCharsTime.preciseWords)
+console.log(`isPangram:`, isPangramTime.preciseWords)
+console.log(`longestWord:`, longestWordTime.preciseWords)
